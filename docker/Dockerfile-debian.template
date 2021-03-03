@@ -15,6 +15,7 @@ ENV PYTHONUNBUFFERED=1 \
     BUILD_DEPS="python-setuptools \
                 python-dev \
                 build-essential \
+                python-cffi \
                 libssl-dev \
                 libxml2-dev \
                 libxslt1-dev \
@@ -31,6 +32,7 @@ COPY site.cfg /plone/instance/
 RUN set -x \
   && apt-get update \
   && apt-get install -y --no-install-recommends --no-install-suggests ${BUILD_DEPS} ${RUN_DEPS} \
+  && pip install cffi \
   && ln -sf /usr/share/zoneinfo/$TZ /etc/localtime \
   && ln -s /usr/include/locale.h /usr/include/xlocale.h \
   && echo "$TZ" > /etc/timezone \
