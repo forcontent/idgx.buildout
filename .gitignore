@@ -32,7 +32,6 @@ buildout.cfg
 develop-eggs/
 downloads/
 eggs/
-etc/
 local.cfg
 node_modules/
 parts/
