@@ -32,3 +32,13 @@ maxage 30
     compressext .bz2
     missingok
 }
+
+\${buildout:log-dir}/supervisor/*.log {
+    weekly
+    rotate 52
+    compress
+    delaycompress
+    notifempty
+    missingok
+    copytruncate
+}
