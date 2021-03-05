@@ -16,6 +16,8 @@
 .installed.cfg
 .mr.developer.cfg
 etc/logrotate.conf
+etc/supervisor.conf
+etc/
 .npm/
 .python-version
 .svn/
