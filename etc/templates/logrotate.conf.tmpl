@@ -1,0 +1,34 @@
+rotate 4
+weekly
+create
+copytruncate
+compress
+compresscmd /bin/bzip2
+compressext .bz2
+delaycompress
+missingok
+maxage 30
+
+\${buildout:var-dir}/zeoserver/zeoserver.log {
+    postrotate
+        \${buildout:bin-directory}/zeoserver logreopen
+    endscript
+}
+
+\${buildout:log-dir}/instance*/event.log ${buildout:log-dir}/instance*/Z2.log {
+    sharedscripts
+    postrotate
+        for pids in $(ls \${buildout:var-dir}/instance*/*.pid); do kill -USR2 \$(cat "$pids"); done
+    endscript
+}
+
+\${buildout:log-dir}/audit*.log {
+    daily
+    rotate 4
+    create
+    copytruncate
+    compress
+    compresscmd /bin/bzip2
+    compressext .bz2
+    missingok
+}
