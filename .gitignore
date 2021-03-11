@@ -15,6 +15,7 @@
 .Trash-1000
 .installed.cfg
 .mr.developer.cfg
+env*
 etc/logrotate.conf
 etc/supervisor.conf
 etc/
