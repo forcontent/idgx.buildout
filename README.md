@@ -25,8 +25,13 @@ $ sudo apt-get update && sudo apt-get install -y --no-install-recommends --no-in
 ```
 Para evitar conflitos com o Python utilizado pelo sistema operacional, cria-se um ambiente virtual (virtualenv) apartado do restante do sistema. Execute:
 ```
-$ python3 -m venv env
+virtualenv -p python2.7 ./env27
 ```
+Atenção: Por enquanto seguimos com Python 2.7 para agilizar o desenvolvimento. Quando finalizado, utilizaremos Python 3:
+```
+python3 -m venv env
+```
+
 Agora clone o projeto:
 ```
 $ git clone https://github.com/forcontent/idgx.buildout.git
@@ -42,6 +47,14 @@ $ pip install -r requirements.txt
 $ buildout -t 30 -c development.cfg
 ```
 "Nada pode dar errado" :)
+
+#### 3.1.1 Subindo a instancia
+Para subir a instancia e iniciar o Plone rode: 
+```
+$ bin/instance fg
+```
+VOcê poderá acessar o Plone pelo endereço localhost:8080 em seu navegador
+
 
 ## 4. Patrocínio
 
