@@ -23,6 +23,12 @@ Atualize o sistema com as dependencias necessárias. Na linha de comando rode:
 ```
 $ sudo apt-get update && sudo apt-get install -y --no-install-recommends --no-install-suggests python3-setuptools python3-dev build-essential python3-cffi libpcre3-dev libssl-dev libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev libyaml-dev curl tzdata net-tools python3-venv
 ```
+
+Se usado Python2.7 então instale os pacotes.
+```
+$ sudo apt-get update && sudo apt-get install -y --no-install-recommends --no-install-suggests python-setuptools python2-dev build-essential python-cffi libpcre3-dev libssl-dev libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev libyaml-dev curl tzdata net-tools
+```
+
 Para evitar conflitos com o Python utilizado pelo sistema operacional, cria-se um ambiente virtual (virtualenv) apartado do restante do sistema. Execute:
 ```
 virtualenv -p python2.7 ./env27
