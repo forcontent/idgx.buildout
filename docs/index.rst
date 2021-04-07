@@ -4,18 +4,18 @@ Este é o Manual Técnico de Instalação do Portal IDGX para o CMS Plone. IDGX 
 O Objetivo dessa versão independente é atualizar a versão do Plone para sua versão mais estável, resolvendo um grande problema de segurança da versão original, que é a utilização de uma versão antiga do Python.
 
 
-# Conteúdo
+## Conteúdo
 
-1. O que é o IDGX
-2. Status do desenvolvimento
-3. Principais recursos
-4. Instalação
-5. Gestão de Conteúdo
-6. Temas
-7. Como contribuir
+1. [O que é o IDGX](idgx.rst)
+2. [Status do desenvolvimento](status.rst)
+3. [Principais recursos](recursos.rst)
+4. [Instalação](instalacao.rst)
+5. [Gestão de Conteúdo](conteudo.rst)
+6. [Temas](temas.rst)
+7. [Como contribuir](contribuir.rst)
 
 
-# Colaboradores
+## Colaboradores
 
 O desenvolvimento desta distribuição do Plone foi feita pelas seguintes empresas e pessoas:
 
@@ -25,4 +25,4 @@ O desenvolvimento desta distribuição do Plone foi feita pelas seguintes empres
 * Cléber J Santos
 * Joaby Augusto
 
-Caso queira participar do desenvolvimento, leia a seção como contrinuir ou entre em contato.
+Caso queira participar do desenvolvimento, leia a seção como contribuir ou entre em contato.
