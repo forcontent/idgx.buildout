@@ -59,7 +59,7 @@ Para subir a instancia e iniciar o Plone rode:
 ```
 $ bin/instance fg
 ```
-VOcê poderá acessar o Plone pelo endereço localhost:8080 em seu navegador
+Você poderá acessar o Plone pelo endereço localhost:8080 em seu navegador
 
 
 ## 4. Patrocínio
