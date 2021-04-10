@@ -49,7 +49,7 @@ $ source ./env/bin/activate
 Aí para terminar, vá para a pasta onde o código do projeto foi clonado, instale os requerimentos e rode o buildout:
 ```
 $ cd idgx.buildout
-$ pip install -r requirements.txt
+$ pip install -r requirements/install.txt
 $ buildout -t 30 -c development.cfg
 ```
 "Nada pode dar errado" :)

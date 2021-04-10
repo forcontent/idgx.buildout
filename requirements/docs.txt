@@ -1,0 +1,7 @@
+markdown-include == 0.6.0
+markdown-refdocs == 1.4.0 ; python_version > '3.0'
+mkdocs == 1.0.4 ; python_version < '3.0'
+mkdocs == 1.1.2 ; python_version > '3.0'
+mkdocs-material == 3.3.0 ; python_version < '3.0'
+mkdocs-material == 7.1.1 ; python_version > '3.0'
+pymdown-extensions == 6.2.1 ; python_version < '3.0'
