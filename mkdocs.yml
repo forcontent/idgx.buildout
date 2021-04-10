@@ -1,0 +1,37 @@
+site_name: Idgx Docs
+site_description: 'Documentação do portal IDGX'
+site_author: 'ForContent'
+repo_name: 'forcontent/idgx.portal'
+repo_url: 'https://github.com/forcontent/idgx.portal'
+strict: true
+
+theme:
+   # Padrão Plone
+   name: 'readthedocs'
+   # Usando Material design
+   #name: 'material'
+   ## Paleta de cores
+   ##palette:
+   ##  primary: 'teal'
+   ##  accent: 'indigo'
+
+   favicon: 'images/favicon.png'
+   logo: 'images/logo.png' 
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - attr_list
+  - toc:
+      permalink: true
+  - pymdownx.mark:
+
+# Copyright
+copyright: 'Copyright &copy; 2021 - forcontent'
+
+# Page tree
+nav:
+    - Home: index.md
+    - Setup: instalacao.md 
