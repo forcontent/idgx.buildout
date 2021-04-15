@@ -108,6 +108,21 @@ IMPORTANTE: Todo o controle de ícones que irão aparecer e sua aparencia são f
 
 O Cover permite que cada tile em sua capa possa ter um ou mais estilos associados, para que esses tiles tenham uma aparência diferenciada. Para instruções de uso completas de uso do Cover, recomendamos a leitura do manual do complemento.
 
+Os estilos definidos na configuração do portal para o Cover são os seguintes:
+
+```
+-Default-|tile-default
+Blocos de itens|bloco-itens
+Destaque Topo|destaque-principal
+Foto Sobreposta|foto-sobreposta
+Lista de itens|lista-itens
+Tag Aviso|tag-aviso
+Tag Comunicado|tag-comunicado
+Tag Urgente|tag-urgente
+Titulo de Secao|titulo-secao
+```
+
+
 ### 2.1 Como definir uma estilo
 
 1. Acesse a aba layout da sua capa;  
@@ -137,14 +152,23 @@ O conteúdo desta linha será posicionado em destaque no topo. Garanta que o til
 
 A aparência do tile será modificado de acordo com o modelo acima.
 
-#### Tag Urgente
+#### Tag para noticias
 
 ![](images/CapaTagUrgente.png)
 
 1. Clique na engrenagem do tile que deseja modificar;
 2. Selecione a classe "Tag Urgente";
 
-Uma tag vermelha com a palavra azul será aplicada acima do título do tile. Preparado para ser utilizado em tiles com notícias.
+Uma tag vermelha com a palavra em branco será aplicada acima do título do tile. Preparado para ser utilizado em tiles com notícias.
+
+Aleém da tag Urgente, existem mais dois itens com o mesmo funcionamento. No total temos:
+
+* Tag Aviso (amarelo)
+* Tag Comunicado (verde)
+* Tag Urgente (vermelho)
+
+Essas tags não são editáveis, os textos sempre serão os mesmos.
+Possível utilizar apenas uma tag por notícia.
 
 #### Titulo da Seção
 
@@ -155,13 +179,13 @@ Uma tag vermelha com a palavra azul será aplicada acima do título do tile. Pre
 
 O conteúdo do tile será exibido em formato de título, de maneira centralizada. Preparado para ser utilizado com o tile básico.
 
-#### Lista de itens
+#### Blocos de itens
 
 ![](images/CapaListaItens.png)
 
 1. Crie um tile de texto rico com elementos dentro de DIVs;
 2. Clique na engrenagem deste tile;
-2. Selecione a classe "Lista Itens";
+2. Selecione a classe "Bloco de Itens";
 
 O conteúdo do tile será exibido em formato de cartões. Preparado para ser utilizado com o tile básico com o seguinte HTML:
 
@@ -173,3 +197,25 @@ O conteúdo do tile será exibido em formato de cartões. Preparado para ser uti
 ```
 
 Repita o código acima para quantos cartões achar necessário.
+
+#### Lista de itens
+
+
+1. Crie um tile de texto rico, a adicione uma lista de itens;
+2. Clique na engrenagem deste tile;
+2. Selecione a classe "Lista de Itens";
+
+O conteúdo do tile será exibido em formato de cartões. Preparado para ser utilizado com o tile básico com o seguinte HTML:
+
+```
+<ul>
+<li>
+<a href="#">
+<strong>destaque 1<br /></strong>
+<span>blablabla</span>
+</a>
+</li>
+</ul>
+```
+
+Repita o código acima para quantos itens achar necessário.

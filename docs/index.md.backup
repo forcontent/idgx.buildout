@@ -6,13 +6,13 @@ O Objetivo dessa versão independente é atualizar a versão do Plone para sua v
 
 ## Conteúdo
 
-1. [O que é o IDGX](idgx.md)
-2. [Status do desenvolvimento](status.md)
-3. [Principais recursos](recursos.md)
+1. [O que é o IDGX](idgx.rst)
+2. [Status do desenvolvimento](status.rst)
+3. [Principais recursos](recursos.rst)
 4. [Instalação](instalacao.md)
-5. [Gestão de Conteúdo](conteudo.md)
-6. [Temas](temas.md)
-7. [Como contribuir](contribuir.md)
+5. [Gestão de Conteúdo](conteudo.rst)
+6. [Temas](temas.rst)
+7. [Como contribuir](contribuir.rst)
 
 
 ## Colaboradores
