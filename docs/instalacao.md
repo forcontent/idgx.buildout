@@ -82,7 +82,7 @@ Para avaliação, você irá rodar um arquivo de buildout diferente, o buildout.
 
 ```
 $ cd idgx.buildout
-$ pip install -r requirements.txt
+$ pip install -r requirements/install.txt
 $ buildout -t 30 -c buildout.cfg
 ```
 
