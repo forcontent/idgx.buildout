@@ -7,7 +7,7 @@ Segue abaixo as instruções de instalação do Portal IDGX para avaliação e d
 
 Fiquem atentos as instruções para a versão de Python correta. APesar do Objetivo do IDGX seja a utilização de Python 3, ainda seguimos utilizando python 2.7 no momento.
 
-As instruções são para a instalação em um ambiente Linux.
+As instruções são para a instalação em um ambiente Linux Ubuntu 20.04.
 
 ### 1.1 Dependências
 Atualize o sistema com as dependências necessárias. Na linha de comando rode:
@@ -70,7 +70,31 @@ Para subir a instancia e iniciar o Plone rode:
 $ bin/instance fg
 ```
 
-Você poderá acessar o Plone pelo endereço localhost:8080 em seu navegador
+Você poderá acessar o Plone pelo endereço http://localhost:8080 em seu navegador.
+
+## 2. Ambiente de Avaliação
+
+Para criar um ambiente de avaliação do IDGX você pode serguir os mesmos passos da seção anterior até o passo 1.2. A única mudança a ser feita será na hora de rodar o buildout e subir a instancia.
+
+### 2.1 Buildout
+
+Para avaliação, você irá rodar um arquivo de buildout diferente, o buildout.cfg:
+
+```
+$ cd idgx.buildout
+$ pip install -r requirements.txt
+$ buildout -t 30 -c buildout.cfg
+```
+
+### 2.2 Subindo a instancia
+
+Para subir a instancia, não será necessário subir em modo foreground. Entao para iniciar o Plone rode: 
+
+```
+$ bin/instance start
+```
+
+Você poderá acessar o Plone pelo endereço http://localhost:8080 em seu navegador
 
 ## Ambiente de Produção
 

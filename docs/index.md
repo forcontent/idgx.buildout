@@ -19,10 +19,10 @@ O Objetivo dessa versão independente é atualizar a versão do Plone para sua v
 
 O desenvolvimento desta distribuição do Plone foi feita pelas seguintes empresas e pessoas:
 
-* Colibritec
-* Forcontent
+* Colibrigov
+* forContent
 * André Nogueira
 * Cléber J Santos
-* Joaby Augusto
+* Joaby Souto
 
 Caso queira participar do desenvolvimento, leia a seção como contribuir ou entre em contato.

@@ -1,4 +1,4 @@
-site_name: Idgx Docs
+site_name: Documentação do IDGX
 site_description: 'Documentação do portal IDGX'
 site_author: 'ForContent'
 repo_name: 'forcontent/idgx.portal'
@@ -7,13 +7,14 @@ strict: true
 
 theme:
    # Padrão Plone
-   name: 'readthedocs'
+   #name: 'readthedocs'
    # Usando Material design
-   #name: 'material'
+   name: 'material'
    ## Paleta de cores
-   ##palette:
-   ##  primary: 'teal'
-   ##  accent: 'indigo'
+   palette:
+     scheme: default
+     primary: 'indigo'
+     accent: 'indigo'
 
    favicon: 'images/favicon.png'
    logo: 'images/logo.png' 
@@ -28,10 +29,19 @@ markdown_extensions:
       permalink: true
   - pymdownx.mark:
 
+extra_css:
+  - stylesheets/extra.css
+
 # Copyright
-copyright: 'Copyright &copy; 2021 - forcontent'
+copyright: 'Copyright &copy; 2021 - forContent'
 
 # Page tree
 nav:
-    - Home: index.md
-    - Setup: instalacao.md 
+    - Início: index.md
+    - O que é o IDGX: idgx.md
+    - Status do Desenvolvimento: status.md
+    - Principais recursos: recursos.md
+    - Instalação: instalacao.md 
+    - Gestão de Conteúdo: conteudo.md
+    - Temas: temas.md
+    - Como contribuir: contribuir.md
