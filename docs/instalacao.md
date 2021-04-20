@@ -5,19 +5,12 @@ Instruções de instalação do Portal IDGX.
 ## 1. Ambiente de Desenvolvimento
 Segue abaixo as instruções de instalação do Portal IDGX para avaliação e desenvolvimento.
 
-Fiquem atentos as instruções para a versão de Python correta. APesar do Objetivo do IDGX seja a utilização de Python 3, ainda seguimos utilizando python 2.7 no momento.
+Fiquem atentos as instruções para a versão de Python correta. Apesar do Objetivo do IDGX seja a utilização de Python 3, ainda seguimos utilizando python 2.7 no momento.
 
 As instruções são para a instalação em um ambiente Linux Ubuntu 20.04.
 
 ### 1.1 Dependências
 Atualize o sistema com as dependências necessárias. Na linha de comando rode:
-
-
-```
-$ sudo apt-get update && sudo apt-get install -y --no-install-recommends --no-install-suggests python3-setuptools python3-dev build-essential python3-cffi libpcre3-dev libssl-dev libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev libyaml-dev curl tzdata net-tools python3-venv
-```
-
-Se usado Python2.7 então instale os pacotes.
 
 ```
 $ sudo apt-get update && sudo apt-get install -y --no-install-recommends --no-install-suggests python-setuptools python2-dev build-essential python-cffi libpcre3-dev libssl-dev libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev libyaml-dev curl tzdata net-tools
@@ -25,16 +18,17 @@ $ sudo apt-get update && sudo apt-get install -y --no-install-recommends --no-in
 
 ### 1.2 Ambiente Virtual
 
-Para evitar conflitos com o Python utilizado pelo sistema operacional, cria-se um ambiente virtual (virtualenv) apartado do restante do sistema. Execute:
+Para evitar conflitos com o Python utilizado pelo sistema operacional, cria-se um ambiente virtual (virtualenv) apartado do restante do sistema. 
+Caso necessário, instale o virtualenv:
+
+```
+sudo apt install virtualenv
+```
+
+Para criar o ambiente virtual execute:
 
 ```
 virtualenv -p python2.7 ./env27
-```
-
-Atenção: Por enquanto seguimos com Python 2.7 para agilizar o desenvolvimento. Quando finalizado, utilizaremos Python 3:
-
-```
-python3 -m venv env
 ```
 
 Agora clone o projeto:
