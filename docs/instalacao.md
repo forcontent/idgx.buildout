@@ -46,7 +46,7 @@ $ git clone https://github.com/forcontent/idgx.buildout.git
 Ative o ambiente virtual:
 
 ```
-$ source ./env/bin/activate
+$ source ./env27/bin/activate
 ```
 
 
