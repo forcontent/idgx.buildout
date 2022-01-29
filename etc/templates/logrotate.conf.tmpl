@@ -9,20 +9,20 @@ delaycompress
 missingok
 maxage 30
 
-\${buildout:var-dir}/zeoserver/zeoserver.log {
+${buildout:var-dir}/zeoserver/zeoserver.log {
     postrotate
-        \${buildout:bin-directory}/zeoserver logreopen
+        ${buildout:bin-directory}/zeoserver logreopen
     endscript
 }
 
-\${buildout:log-dir}/instance*/event.log ${buildout:log-dir}/instance*/Z2.log {
+${buildout:log-dir}/instance*/event.log ${buildout:log-dir}/instance*/Z2.log {
     sharedscripts
     postrotate
-        for pids in $(ls \${buildout:var-dir}/instance*/*.pid); do kill -USR2 \$(cat "$pids"); done
+        for pids in $(ls ${buildout:var-dir}/instance*/*.pid); do kill -USR2 \$(cat "$pids"); done
     endscript
 }
 
-\${buildout:log-dir}/audit*.log {
+${buildout:log-dir}/audit*.log {
     daily
     rotate 4
     create
@@ -33,7 +33,7 @@ maxage 30
     missingok
 }
 
-\${buildout:log-dir}/supervisor/*.log {
+${buildout:log-dir}/supervisor/*.log {
     weekly
     rotate 52
     compress

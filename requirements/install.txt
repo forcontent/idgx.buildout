@@ -1,6 +1,6 @@
 -c https://dist.plone.org/release/5.2.4/requirements.txt
 cffi==1.14.5
-pip==20.2.3
+pip==21.1
 setuptools==40.2.0
 wheel==0.35.1
 zc.buildout==2.13.2
