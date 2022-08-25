@@ -1,0 +1,8 @@
+bobtemplates.plone==5.2.2
+flake8==3.9.2
+i18ndude==5.4.2
+mr.bob==0.1.2
+plonecli==1.1
+regex==2021.3.17
+zest.pocompile==1.5.0
+zest.releaser==6.22.2
