@@ -13,7 +13,7 @@ As instruções são para a instalação em um ambiente Linux Ubuntu 20.04.
 Atualize o sistema com as dependências necessárias. Na linha de comando rode:
 
 ```
-$ sudo apt-get update && sudo apt-get install -y --no-install-recommends --no-install-suggests python-setuptools python2-dev build-essential python-cffi libpcre3-dev libssl-dev libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev libyaml-dev curl tzdata net-tools
+$ sudo apt-get update && sudo apt-get install -y --no-install-recommends --no-install-suggests python-setuptools python2-dev build-essential python-cffi libpcre3-dev libssl-dev libxml2-dev libxslt1-dev libbz2-dev libjpeg62-dev libyaml-dev curl tzdata net-tools libgdk-pixbuf2.0-dev
 ```
 
 ### 1.2 Ambiente Virtual
